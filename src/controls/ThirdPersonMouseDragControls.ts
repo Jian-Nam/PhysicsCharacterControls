@@ -193,7 +193,6 @@ class ThirdPersonMouseDragControls extends PhysicsCharacterControls {
       (keyStates.forward || keyStates.backward || keyStates.leftward || keyStates.rightward)
     ) {
       this.camera.getWorldDirection(this._forwardDirection);
-      this.object.lookAt(this.object.position.clone().add(this.getForwardVector()));
       return;
     }
   }
